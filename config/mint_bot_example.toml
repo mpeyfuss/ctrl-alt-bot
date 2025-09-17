@@ -1,0 +1,39 @@
+# RPC endpoint to connect to
+rpc_url = "https://ethereum-rpc.publicnode.com"
+
+# Flashbots relay url
+relay_url = "https://relay.flashbots.net"
+
+# Block time (sec)
+block_time = 12
+
+# Keystore file for the bot’s account
+bot_keystore = "./bot_keystore.json"
+
+# Keystore file for the flashbots auth account
+auth_keystore = "./auth_keystore.json"
+
+# Target timestamp for tx inclusion (most mints rely on this)
+target_timestamp = 1757794055
+
+# Priority fee (gwei)
+priority_fee = 2
+
+# Transactions list
+[[transactions]]
+to = "0xAbC1234567890abcdef1234567890abcdef1234"
+function_signature = "mint(address)"
+value = "0.1 ether" # or "5000 gwei" or "2341351241241512 wei"
+gas_estimate = 100000
+args = [
+    "0x74A7b842FDeb244C152aa5BC8B7fbae362091EE1"
+]
+
+[[transactions]]
+to = "0xAbC1234567890abcdef1234567890abcdef1234"
+function_signature = "mint(address)"
+value = "0.1 ether"
+gas_estimate = 100000
+args = [
+    "0x74A7b842FDeb244C152aa5BC8B7fbae362091EE1"
+]
